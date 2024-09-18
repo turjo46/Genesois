@@ -1,67 +1,137 @@
 import React from 'react';
 
 const PricingPlans = () => {
-  const plans = [
-    {
-        price: 480,
-      name: 'Starter Plan',
-     
-      features: [
-        { text: 'Creative Business Consulting', included: true },
-        { text: 'Make a Perfect Corporate Office', included: true },
-        { text: 'Powerfull Management', included: false },
-        { text: 'Position Your Business Growth', included: false },
-        { text: 'Consulting Service Provider', included: false }
-      ],
-    },
-    {
-      name: 'Basic Plan',
-      price: 750,
-      features: [
-        { text: 'Creative Business Consulting', included: true },
-        { text: 'Make a Perfect Corporate Office', included: true },
-        { text: 'Powerfull Management', included: true },
-        { text: 'Position Your Business Growth', included: true },
-        { text: 'Consulting Service Provider', included: false }
-      ],
-    },
-    {
-      name: 'Advanced Plan',
-      price: 860,
-      features: [
-        { text: 'Creative Business Consulting', included: true },
-        { text: 'Make a Perfect Corporate Office', included: true },
-        { text: 'Powerfull Management', included: true },
-        { text: 'Position Your Business Growth', included: true },
-        { text: 'Consulting Service Provider', included: true }
-      ],
-    }
-  ];
-
   return (
-    <div className="flex justify-center space-x-8 p-10 bg-white">
-      {plans.map((plan, index) => (
-        <div key={index} className="border-2 border-gray-200 rounded-none shadow-3xl w-96 ">
-            <div className="text-center py-8">
-            <h3 className="text-6xl font-bold text-[#0b2239]">${plan.price}</h3>
-            <p className="text-[#0b2239]">/ Per Month</p>
-          </div>
-          <div className="bg-orange-500 text-white text-center py-4">
-            <h2 className="text-2xl font-bold">{plan.name}</h2>
-          </div>
-          
-          <ul className="px-8 py-4 space-y-8 text-center font-semibold">
-            {plan.features.map((feature, idx) => (
-              <li key={idx} className={`${feature.included ? 'text-gray-600' : 'text-gray-600 line-through font-bold'}`}>
-                {feature.text}
-              </li>
-            ))}
-          </ul>
-          <div className="text-center py-4  h-28 ">
-            <button className="bg-orange-500 h-14 w-52 text-white py-2 px-6 rounded-md hover:bg-[#0b2239]">PURCHASE NOW</button>
-          </div>
+    <div className="bg-white container mx-auto max-w-[1200px] my-12 p-5 grid grid-cols-1 md:grid-cols-3 gap-8">
+      {/* Starter Plan */}
+      <div className="border shadow-lg  overflow-hidden">
+        <div className="bg-white p-8">
+          <h2 className="text-6xl font-bold text-gray-900">
+            <span className="text-3xl mr-3">$</span>480
+            <span className="text-xl font-normal text-gray-500"> / Per Month</span>
+          </h2>
         </div>
-      ))}
+        <div className="bg-orange-500 text-white text-center py-8">
+          <h3 className="text-3xl tracking-tighter font-semibold">Starter Plan</h3>
+        </div>
+        <div className='bg-gray-100'>
+        <ul className="p-6 space-y-4  text-gray-700 text-lg">
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64] ">&#10003;</span>
+            <span className="ml-2">Creative Business Consulting</span>
+          </li>
+          <li className="flex items-center py-2 bg-gray-200 px-5">
+            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="ml-2">Make a Perfect Corporate Office</span>
+          </li>
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="ml-2">Powerful Management</span>
+          </li>
+          <li className="flex items-center py-2 bg-gray-200 px-5">
+            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="ml-2">Position Your Business Growth</span>
+          </li>
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="ml-2">Consulting Service Provider</span>
+          </li>
+        </ul>
+        </div>
+        <div className="bg-white p-6 text-center">
+          <button className="bg-orange-500 text-white px-4 py-5 w-60 rounded-md hover:bg-[#0c2239]">
+            PURCHASE NOW
+          </button>
+        </div>
+      </div>
+
+{/* Basis Plan */}
+<div className="border shadow-lg  overflow-hidden">
+        <div className="bg-white p-8">
+          <h2 className="text-6xl font-bold text-gray-900">
+            <span className="text-3xl mr-3">$</span>750
+            <span className="text-xl font-normal text-gray-500"> / Per Month</span>
+          </h2>
+        </div>
+        <div className="bg-orange-500 text-white text-center py-8">
+          <h3 className="text-3xl tracking-tighter font-semibold">Basic Plan</h3>
+        </div>
+        <div className='bg-gray-100'>
+        <ul className="p-6 space-y-4  text-gray-700 text-lg">
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64] ">&#10003;</span>
+            <span className="ml-2">Creative Business Consulting</span>
+          </li>
+          <li className="flex items-center py-2 bg-gray-200 px-5">
+            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="ml-2">Make a Perfect Corporate Office</span>
+          </li>
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="ml-2">Powerful Management</span>
+          </li>
+          <li className="flex items-center py-2 bg-gray-200 px-5">
+            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="ml-2">Position Your Business Growth</span>
+          </li>
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="ml-2">Consulting Service Provider</span>
+          </li>
+        </ul>
+        </div>
+        <div className="bg-white p-6 text-center">
+          <button className="bg-orange-500 text-white px-4 py-5 w-60 rounded-md hover:bg-[#0c2239]">
+            PURCHASE NOW
+          </button>
+        </div>
+      </div>
+
+
+    {/*Advanced Plan */}
+<div className="border shadow-lg  overflow-hidden">
+        <div className="bg-white p-8">
+          <h2 className="text-6xl font-bold text-gray-900">
+            <span className="text-3xl mr-3">$</span>860
+            <span className="text-xl font-normal text-gray-500"> / Per Month</span>
+          </h2>
+        </div>
+        <div className="bg-orange-500 text-white text-center py-8">
+          <h3 className="text-3xl tracking-tighter font-semibold">Advanced Plan</h3>
+        </div>
+        <div className='bg-gray-100'>
+        <ul className="p-6 space-y-4  text-gray-700 text-lg">
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64] ">&#10003;</span>
+            <span className="ml-2">Creative Business Consulting</span>
+          </li>
+          <li className="flex items-center py-2 bg-gray-200 px-5">
+            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="ml-2">Make a Perfect Corporate Office</span>
+          </li>
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="ml-2">Powerful Management</span>
+          </li>
+          <li className="flex items-center py-2 bg-gray-200 px-5">
+            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="ml-2">Position Your Business Growth</span>
+          </li>
+          <li className="flex items-center py-2">
+            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="ml-2">Consulting Service Provider</span>
+          </li>
+        </ul>
+        </div>
+        <div className="bg-white p-6 text-center">
+          <button className="bg-orange-500 text-white px-4 py-5 w-60 rounded-md hover:bg-[#0c2239]">
+            PURCHASE NOW
+          </button>
+        </div>
+      </div>  
+
+     
+     
     </div>
   );
 };

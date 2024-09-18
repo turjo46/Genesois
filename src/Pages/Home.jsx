@@ -5,6 +5,8 @@ import TestimonialSlider from '../TestimonialSlider'
 
 import Marge from '../Marge'
 import Dummy from '../Dummy'
+import Design from '../Desiggn'
+
 
 
 
@@ -20,6 +22,7 @@ const Home = () => {
       <Marge/>
       
       <Dummy/>
+      <Design/>
       
       
       
