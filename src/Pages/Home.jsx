@@ -6,6 +6,13 @@ import TestimonialSlider from '../TestimonialSlider'
 import Marge from '../Marge'
 import Dummy from '../Dummy'
 import Design from '../Desiggn'
+import BlogPost from '../BlogPost'
+import CommentSection from '../CommentSection'
+import Form from '../Form'
+import FAQSection from '../FAQSection'
+
+
+
 
 
 
@@ -15,7 +22,7 @@ import Design from '../Desiggn'
 
 const Home = () => {
   return (
-    <div>
+    <div className='bg-white'>
       <Section/>
       <PricingPlans/>
       <TestimonialSlider/>
@@ -23,6 +30,15 @@ const Home = () => {
       
       <Dummy/>
       <Design/>
+      <BlogPost/>
+      
+      <CommentSection/>
+      <Form/>
+      <FAQSection/>
+      
+
+      
+      
       
       
       
