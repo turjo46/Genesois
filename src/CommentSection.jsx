@@ -36,7 +36,7 @@ const CommentSection = () => {
 
   return (
     <div className='  container mx-auto   ' >
-    <div className=" bg-gray-100 w-[1100px] px-36">
+    <div className=" bg-gray-100 w-[1000px] px-36 py-5">
       <h2 className="text-3xl font-bold mb-8 text-black ">(02) Comments:</h2>
       {comments.map((comment) => (
         <div key={comment.id} className=" border-b border-gray-200 pb-4">

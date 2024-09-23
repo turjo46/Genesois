@@ -1,6 +1,6 @@
 import React from 'react';
-import { CiHeart } from 'react-icons/ci';
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { CiHardDrive, CiHeart } from 'react-icons/ci';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaRegFileImage, FaTwitter } from 'react-icons/fa';
 import { MdOutlineCalendarMonth, MdOutlinePersonOutline } from 'react-icons/md';
 
 const BlogPost = () => {
@@ -14,7 +14,7 @@ const BlogPost = () => {
           <img
             src="https://webextheme.com/html/loxicat/images/news/single-news.jpg" // Replace with your image source
             alt="Nanotech Immersion Along The Highway"
-            className="w-full h-[500px] object-cover"
+            className="w-full h-[600px] object-cover "
           />
         </div>
         
@@ -108,13 +108,13 @@ const BlogPost = () => {
 
       {/* Sidebar Section */}
       <aside className="col-span-1">
-      <div className="flex items-center border h-32 bg-white w-96 mb-6">
+      <div className="flex items-center border h-40 bg-gray-100 w-96 mb-6">
       <input
         type="text"
         placeholder="Search..."
-        className="px-4 py-2 w-full focus:outline-none"
+        className="px-4 py-2 w-full bg-white focus:outline-none"
       />
-      <button className="bg-orange-500 p-5">
+      <button className="bg-orange-500 p-3">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5 "
@@ -133,30 +133,30 @@ const BlogPost = () => {
     </div>
         {/* Categories Section */}
         <div className="bg-gray-100 shadow-md rounded-lg p-6 mb-6">
-          <h2 className="text-2xl px-3 font-bold text-black bg-white  pb-4 border-l-4 border-orange-500 pl-2">Categories</h2>
-          <ul className="mt-4 space-y-6">
-            <li className="flex items-center ">
-              <span className="text-orange-500">&#10003;</span>
+          <h2 className="text-2xl px-3 font-bold text-black bg-white  pb-4 border-l-4 border-orange-500 pl-2 mt-2">Categories</h2>
+          <ul className="mt-4 space-y-6 mb-2">
+            <li className="flex items-center border-b  ">
+              <span className="text-orange-500"><CiHardDrive /></span>
               <span className="ml-2   font-medium text-base text-gray-600 hover:text-orange-500 ">Business</span>
             </li>
-            <li className="flex items-center">
-              <span className="text-orange-500">&#10003;</span>
+            <li className="flex items-center border-b">
+              <span className="text-orange-500"><CiHardDrive /></span>
               <span className="ml-2 font-medium text-base text-gray-600 hover:text-orange-500">Consulting</span>
             </li>
-            <li className="flex items-center">
-              <span className="text-orange-500">&#10003;</span>
+            <li className="flex items-center border-b">
+              <span className="text-orange-500"><CiHardDrive /></span>
               <span className="ml-2 font-medium text-base text-gray-600 hover:text-orange-500">Finance</span>
             </li>
-            <li className="flex items-center">
-              <span className="text-orange-500">&#10003;</span>
+            <li className="flex items-center border-b">
+              <span className="text-orange-500"><CiHardDrive /></span>
               <span className="ml-2 font-medium text-base text-gray-600 hover:text-orange-500">Corporate</span>
             </li>
-            <li className="flex items-center">
-              <span className="text-orange-500">&#10003;</span>
+            <li className="flex items-center border-b">
+              <span className="text-orange-500"><CiHardDrive /></span>
               <span className="ml-2 font-medium text-base text-gray-600 hover:text-orange-500">Conference</span>
             </li>
-            <li className="flex items-center">
-              <span className="text-orange-500">&#10003;</span>
+            <li className="flex items-center border-b">
+              <span className="text-orange-500"><CiHardDrive /></span>
               <span className="ml-2 font-medium text-base text-gray-600 hover:text-orange-500">Economics</span>
             </li>
           </ul>
@@ -165,17 +165,17 @@ const BlogPost = () => {
         {/* Popular Posts Section */}
         <div className="bg-gray-100 shadow-md rounded-lg p-6">
           <h2 className="text-2xl px-3 font-bold text-black bg-white  pb-4 border-l-4 border-orange-500 pl-2">Popular Posts</h2>
-          <ul className="mt-4 space-y-2">
+          <ul className="mt-4 space-y-4">
             <li className="text-gray-600">
-              <span className="block font-bold text-orange-500">Business Solution</span>
+              <span className="block font-semibold text-black text-lg hover:text-orange-500 ">Business Solution</span>
               <span className="text-sm">26 April, 2019</span>
             </li>
             <li className="text-gray-600">
-              <span className="block font-bold text-orange-500">Business Solution</span>
+              <span className="block font-semibold text-black text-lg hover:text-orange-500">Business Solution</span>
               <span className="text-sm">26 April, 2019</span>
             </li>
             <li className="text-gray-600">
-              <span className="block font-bold text-orange-500">Business Solution</span>
+              <span className="block font-semibold text-black text-lg hover:text-orange-500">Business Solution</span>
               <span className="text-sm">26 April, 2019</span>
             </li>
             {/* Add more popular posts as needed */}
@@ -184,19 +184,17 @@ const BlogPost = () => {
         <div className="container mx-auto px-4 py-8">
       {/* Archives Section */}
       <div className="bg-gray-100 p-6 mb-8">
-        <h2 className="text-lg font-bold text-gray-900 mb-4 border-b-2 border-gray-300 pb-2">
-          <span className="border-l-4 border-orange-500 pl-2">Archives</span>
+        <h2 className="text-2xl px-3 font-bold text-black bg-white  pb-4 border-l-4 border-orange-500 pl-2 ">
+          <span className="mt-2 ">Archives</span>
         </h2>
-        <ul className="space-y-4">
+        <ul className="space-y-4 mb-2">
           {['January 2019', 'March 2019', 'April 2019', 'June 2019'].map((month, index) => (
             <li key={index} className="flex items-center">
               <span className="text-orange-500 mr-2">
                 {/* Insert an icon here, such as a file icon */}
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v16c0 1.1.9 2 2 2h12a2 2 0 002-2V4a2 2 0 00-2-2H6a2 2 0 00-2 2z" />
-                </svg>
+                <FaRegFileImage/>
               </span>
-              <a href="#" className="text-gray-700 hover:underline">{month}</a>
+              <a href="#" className="text-black text-lg  hover:text-orange-500">{month}</a>
             </li>
           ))}
         </ul>
@@ -204,12 +202,12 @@ const BlogPost = () => {
 
       {/* Tags Section */}
       <div className="bg-gray-100 p-6">
-        <h2 className="text-lg font-bold text-gray-900 mb-4 border-b-2 border-gray-300 pb-2">
-          <span className="border-l-4 border-orange-500 pl-2">Tags</span>
+        <h2 className="text-2xl px-3 font-bold text-black bg-white  pb-4 border-l-4 border-orange-500 pl-2 mb-4">
+          <span className="text-2xl  font-bold text-black bg-white  pb-4 ">Tags</span>
         </h2>
         <div className="flex flex-wrap gap-2">
           {['Consulting', 'Finance', 'Meeting', 'Travel', 'Business', 'Corporate', 'Investment', 'Tax', 'Economics', 'Management'].map((tag, index) => (
-            <span key={index} className="bg-white text-gray-700 border border-gray-300 px-3 py-1 rounded-md text-sm">
+            <span key={index} className="bg-white text-gray-700 border border-gray-300 px-3 py-1 rounded-md text-sm hover:bg-orange-500 hover:text-white">
               {tag}
             </span>
           ))}

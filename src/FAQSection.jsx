@@ -69,7 +69,7 @@ const FAQSection = () => {
               <span className="text-lg tracking-tighter font-semibold">{faq.question}</span>
             </button>
             {isOpen && (
-              <div className="mt-2 p-4 bg-white text-gray-700 rounded-b-lg">
+              <div className="mt-2 p-4 bg-white text-gray-700 rounded-b-lg ">
                 {faq.answer}
               </div>
             )}
