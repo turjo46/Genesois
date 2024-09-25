@@ -10,7 +10,8 @@ import BlogPost from '../BlogPost'
 import CommentSection from '../CommentSection'
 import Form from '../Form'
 import FAQSection from '../FAQSection'
-import WhyChooseUs from '../WhyChooseUs'
+
+import TestNew from '../TestNew'
 
 
 
@@ -39,7 +40,13 @@ const Home = () => {
       <CommentSection/>
       <Form/>
       <FAQSection/>
-      <WhyChooseUs/>
+      <TestNew/>
+      
+      
+      
+      
+    
+      
             
 
       

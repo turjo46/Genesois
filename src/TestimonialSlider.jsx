@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Swiper,SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { CgMoveLeft } from 'react-icons/cg';
 
 
 
@@ -71,7 +70,7 @@ const TestimonialSlider = () => {
         {testimonials.map((testimonial) => (
           <SwiperSlide key={testimonial.id} className="flex justify-center">
             <div className=" p-8 rounded-lg  text-center">
-              <div className="text-white text-3xl mb-4">“</div>
+              
               
               
               <p className="text-white text-lg mb-6 border  shadow-3xl rounded-lg bg-[#1d3045] bg-opacity-45 border-[#1d3045]  h-48 w-96  text-center p-10 border-t-[#ff7906]">{testimonial.testimonial}</p>
