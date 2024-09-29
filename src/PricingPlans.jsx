@@ -1,4 +1,6 @@
 import React from 'react';
+import { ImCross } from 'react-icons/im';
+import { TiTick } from 'react-icons/ti';
 
 const PricingPlans = () => {
   return (
@@ -17,23 +19,23 @@ const PricingPlans = () => {
         <div className='bg-gray-100'>
         <ul className="p-6 space-y-4  text-gray-700 text-lg">
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64] ">&#10003;</span>
+            <span className="text-[#5C5E64] "><TiTick/></span>
             <span className="ml-2">Creative Business Consulting</span>
           </li>
           <li className="flex items-center py-2 bg-gray-200 px-5">
-            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="text-[#5C5E64] "><TiTick /></span>
             <span className="ml-2">Make a Perfect Corporate Office</span>
           </li>
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="text-[#5C5E64]  "><ImCross /></span>
             <span className="ml-2">Powerful Management</span>
           </li>
           <li className="flex items-center py-2 bg-gray-200 px-5">
-            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="text-[#5C5E64]"><ImCross /></span>
             <span className="ml-2">Position Your Business Growth</span>
           </li>
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="text-[#5C5E64]"><ImCross /></span>
             <span className="ml-2">Consulting Service Provider</span>
           </li>
         </ul>
@@ -59,23 +61,23 @@ const PricingPlans = () => {
         <div className='bg-gray-100'>
         <ul className="p-6 space-y-4  text-gray-700 text-lg">
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64] ">&#10003;</span>
+            <span className="text-[#5C5E64] "><TiTick /></span>
             <span className="ml-2">Creative Business Consulting</span>
           </li>
           <li className="flex items-center py-2 bg-gray-200 px-5">
-            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="text-[#5C5E64]"><TiTick /></span>
             <span className="ml-2">Make a Perfect Corporate Office</span>
           </li>
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="text-[#5C5E64]"><TiTick /></span>
             <span className="ml-2">Powerful Management</span>
           </li>
           <li className="flex items-center py-2 bg-gray-200 px-5">
-            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="text-[#5C5E64]"><ImCross /></span>
             <span className="ml-2">Position Your Business Growth</span>
           </li>
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64]">&#10007;</span>
+            <span className="text-[#5C5E64]"><ImCross /></span>
             <span className="ml-2">Consulting Service Provider</span>
           </li>
         </ul>
@@ -102,23 +104,23 @@ const PricingPlans = () => {
         <div className='bg-gray-100'>
         <ul className="p-6 space-y-4  text-gray-700 text-lg">
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64] ">&#10003;</span>
+            <span className="text-[#5C5E64] "><TiTick /></span>
             <span className="ml-2">Creative Business Consulting</span>
           </li>
           <li className="flex items-center py-2 bg-gray-200 px-5">
-            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="text-[#5C5E64]"><TiTick /></span>
             <span className="ml-2">Make a Perfect Corporate Office</span>
           </li>
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="text-[#5C5E64]"><TiTick /></span>
             <span className="ml-2">Powerful Management</span>
           </li>
           <li className="flex items-center py-2 bg-gray-200 px-5">
-            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="text-[#5C5E64]"><TiTick /></span>
             <span className="ml-2">Position Your Business Growth</span>
           </li>
           <li className="flex items-center py-2">
-            <span className="text-[#5C5E64]">&#10003;</span>
+            <span className="text-[#5C5E64]"><TiTick /></span>
             <span className="ml-2">Consulting Service Provider</span>
           </li>
         </ul>
