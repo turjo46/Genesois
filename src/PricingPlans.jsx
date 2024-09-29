@@ -22,7 +22,7 @@ const PricingPlans = () => {
             <span className="text-[#5C5E64] "><TiTick/></span>
             <span className="ml-2">Creative Business Consulting</span>
           </li>
-          <li className="flex items-center py-2 bg-gray-200 px-5">
+          <li className="flex items-center py-2 bg-gray-200 ">
             <span className="text-[#5C5E64] "><TiTick /></span>
             <span className="ml-2">Make a Perfect Corporate Office</span>
           </li>
@@ -64,7 +64,7 @@ const PricingPlans = () => {
             <span className="text-[#5C5E64] "><TiTick /></span>
             <span className="ml-2">Creative Business Consulting</span>
           </li>
-          <li className="flex items-center py-2 bg-gray-200 px-5">
+          <li className="flex items-center py-2 bg-gray-200 ">
             <span className="text-[#5C5E64]"><TiTick /></span>
             <span className="ml-2">Make a Perfect Corporate Office</span>
           </li>
@@ -72,7 +72,7 @@ const PricingPlans = () => {
             <span className="text-[#5C5E64]"><TiTick /></span>
             <span className="ml-2">Powerful Management</span>
           </li>
-          <li className="flex items-center py-2 bg-gray-200 px-5">
+          <li className="flex items-center py-2 bg-gray-200 ">
             <span className="text-[#5C5E64]"><ImCross /></span>
             <span className="ml-2">Position Your Business Growth</span>
           </li>
