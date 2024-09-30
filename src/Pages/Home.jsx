@@ -12,6 +12,7 @@ import Form from '../Form'
 import FAQSection from '../FAQSection'
 
 import TestNew from '../TestNew'
+import Sidebar from '../Sidebar'
 
 
 
@@ -41,6 +42,7 @@ const Home = () => {
       <Form/>
       <FAQSection/>
       <TestNew/>
+      <Sidebar/>
       
       
       
