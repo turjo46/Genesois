@@ -13,6 +13,7 @@ import FAQSection from '../FAQSection'
 
 import TestNew from '../TestNew'
 import Sidebar from '../Sidebar'
+import WhyChooseUs from '../WhyChooseUs'
 
 
 
@@ -43,6 +44,7 @@ const Home = () => {
       <FAQSection/>
       <TestNew/>
       <Sidebar/>
+      <WhyChooseUs/>
       
       
       
