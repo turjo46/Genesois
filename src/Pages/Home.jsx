@@ -14,6 +14,11 @@ import FAQSection from '../FAQSection'
 import TestNew from '../TestNew'
 import Sidebar from '../Sidebar'
 import WhyChooseUs from '../WhyChooseUs'
+import Certificate from '../Certificate'
+import Pop from '../Pop'
+import ContactUs from '../Contact Us'
+
+
 
 
 
@@ -45,6 +50,10 @@ const Home = () => {
       <TestNew/>
       <Sidebar/>
       <WhyChooseUs/>
+      <Certificate></Certificate>
+      <Pop/>
+      <ContactUs/>
+      
       
       
       
