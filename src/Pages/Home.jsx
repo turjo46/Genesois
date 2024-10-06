@@ -17,6 +17,8 @@ import WhyChooseUs from '../WhyChooseUs'
 import Certificate from '../Certificate'
 import Pop from '../Pop'
 import ContactUs from '../Contact Us'
+import Slider from '../Slider'
+import ClientSlider from '../ClientSlider'
 
 
 
@@ -53,6 +55,8 @@ const Home = () => {
       <Certificate></Certificate>
       <Pop/>
       <ContactUs/>
+      <Slider/>
+      <ClientSlider/>
       
       
       
