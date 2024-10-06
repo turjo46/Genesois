@@ -19,6 +19,7 @@ import Pop from '../Pop'
 import ContactUs from '../Contact Us'
 import Slider from '../Slider'
 import ClientSlider from '../ClientSlider'
+import PrinciplesSlider from '../PrinciplesSlider'
 
 
 
@@ -57,6 +58,7 @@ const Home = () => {
       <ContactUs/>
       <Slider/>
       <ClientSlider/>
+      <PrinciplesSlider/>
       
       
       
