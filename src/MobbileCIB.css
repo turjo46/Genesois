@@ -1,0 +1,22 @@
+.MobbileCIB{
+    background-image: url("../../genisis-project/src/assets/Gradient.png");
+    background-repeat: repeat-y;
+    background-color: black;
+    
+    
+    background-position: center ;
+    
+    height: 100%;
+    width: 100%;
+    
+    position: relative;
+}
+.background{
+    background-image: url("../../genisis-project/src/assets/Rectangle\ 983.png");
+  
+    background-position: center ;
+    
+    height: 100%;
+    width: 100%;
+    
+}
