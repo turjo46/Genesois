@@ -6,6 +6,7 @@ import MobileCIB from '../MobileCIB'
 import GetInTouch from '../GetInTouch'
 import HeaderFooterSection from '../HeaderFooterSection'
 import CaseStudySection from '../CaseStudySection'
+import ScrollToTopAndNavBar from '../ScrollToTopAndNavBar'
 
 
 
@@ -32,6 +33,7 @@ const Home = () => {
       <GetInTouch/>
       <CaseStudySection/>
       <HeaderFooterSection/>
+      <ScrollToTopAndNavBar/>
       
       
       
