@@ -7,6 +7,7 @@ import GetInTouch from '../GetInTouch'
 import HeaderFooterSection from '../HeaderFooterSection'
 import CaseStudySection from '../CaseStudySection'
 import ScrollToTopAndNavBar from '../ScrollToTopAndNavBar'
+import AnimatedSection from '../AnimatedSection'
 
 
 
@@ -34,6 +35,7 @@ const Home = () => {
       <CaseStudySection/>
       <HeaderFooterSection/>
       <ScrollToTopAndNavBar/>
+      <AnimatedSection/>
       
       
       

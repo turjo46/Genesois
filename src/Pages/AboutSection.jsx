@@ -1,4 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+const ProgressBar = ({ label, target }) => {
+  const [progress, setProgress] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        if (prev < target) return prev + 1;
+        clearInterval(interval); // Clear interval once the target is reached
+        return target;
+      });
+    }, 20); // Adjust this value to control the speed of the animation
+
+    return () => clearInterval(interval);
+  }, [target]);
+
+  return (
+    <div className="w-full mb-4">
+      <div className="text-white mb-2 text-sm font-semibold">{label}</div>
+      <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
+        <div className="flex items-center">
+          <div
+            className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3 rounded-full transition-all duration-500"
+            style={{ width: `${progress}%` }}
+          ></div>
+          <div className="ml-2 mt-[-4px] text-sm text-white font-semibold">
+            {progress}%
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 const AboutMeSection = () => {
   return (
@@ -13,27 +46,27 @@ const AboutMeSection = () => {
               src="../../../../public/image/image 1.png" // replace this with your image path
               alt="Profile"
               className="rounded-xl object-cover shadow-lg lg:h-[560px] h-96 "
-              style={{ width: '', height: '' }}
             />
 
             {/* Watch Intro Button */}
             <a
-  href="#watch-intro" 
-  className="absolute lg:right-[388px] lg:top-[55px] border-2 bg-black border-transparent bg-gradient-to-r from-[#AC01C6] to-[#5411FF] md:right-[146px] md:top-[55px] right-[251px] top-[14px] transform -translate-y-12 md:-translate-y-24 h-16 w-34 md:h-20 md:w-44 text-lg md:text-2xl tracking-tighter  bg-clip-text text-transparent px-4 py-2 rounded-lg flex items-center rotate-90 origin-left"
-  style={{
-    borderImage: "linear-gradient(90deg, #AC01C6, #5411FF) 1",
-    
-  }}
->
-  Watch Intro
-</a>
-
+              href="#watch-intro"
+              className="absolute lg:right-[388px] lg:top-[55px] border-2 bg-black border-transparent bg-gradient-to-r from-[#AC01C6] to-[#5411FF] md:right-[146px] md:top-[55px] right-[251px] top-[14px] transform -translate-y-12 md:-translate-y-24 h-16 w-34 md:h-20 md:w-44 text-lg md:text-2xl tracking-tighter bg-clip-text text-transparent px-4 py-2 rounded-lg flex items-center rotate-90 origin-left"
+              style={{
+                borderImage: "linear-gradient(90deg, #AC01C6, #5411FF) 1",
+              }}
+            >
+              Watch Intro
+            </a>
           </div>
 
           {/* Right Side - Text */}
-          <div className="mt-5 md:w-1/2 text-center md:text-left lg:mr-10 md:mr-10  ">
-            <p className="text-3xl md:text-4xl font-[400] mb-6 ">
-            <p className=""> <span className="bg-gradient-to-r bg-clip-text  from-[#AC01C6] to-[#5411FF] text-transparent">Knowledge</span> is the key that unlocks the way of possibility</p>
+          <div className="mt-5 md:w-1/2 text-center md:text-left lg:mr-10 md:mr-10">
+            <p className="text-3xl md:text-4xl font-[400] mb-6">
+              <span className="bg-gradient-to-r bg-clip-text from-[#AC01C6] to-[#5411FF] text-transparent">
+                Knowledge
+              </span>{" "}
+              is the key that unlocks the way of possibility
             </p>
             <p className="text-md md:text-md tracking-wide px-2 font-[300]">
               I’m a strong advocate for mentorship, guiding the next generation of developers toward success. My approach is collaborative and combined with strategic thinking.
@@ -41,54 +74,33 @@ const AboutMeSection = () => {
 
             {/* Progress Bars Section */}
             <div className="mt-10">
-              {/* Progress bars */}
               <div className="flex flex-col md:flex-row justify-between mb-6 gap-10 md:gap-14 px-3">
                 <div className="w-full md:w-1/2 pr-4">
-                  <div className="mb-2">Opportunity Created</div>
-                  <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
-                    <div className="flex">
-                      <div className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3  rounded-full" style={{ width: '92%' }}></div>
-                      <div className="ml-2 mt-[-4px] text-sm">92%</div>
-                    </div>
-                  </div>
+                  <ProgressBar label="Opportunity Created" target={92} />
                 </div>
                 <div className="w-full md:w-1/2 pl-4">
-                  <div className="mb-2">Skill Developed</div>
-                  <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
-                    <div className="flex">
-                      <div className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3 rounded-full" style={{ width: '95%' }}></div>
-                      <div className="ml-2 mt-[-4px] text-sm">95%</div>
-                    </div>
-                  </div>
+                  <ProgressBar label="Skill Developed" target={95} />
                 </div>
               </div>
 
               <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-14 px-3">
                 <div className="w-full md:w-1/2 pr-4">
-                  <div className="mb-2">Time Spent</div>
-                  <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
-                    <div className="flex">
-                      <div className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3 rounded-full" style={{ width: '85%' }}></div>
-                      <div className="ml-2 mt-[-4px] text-sm">85%</div>
-                    </div>
-                  </div>
+                  <ProgressBar label="Time Spent" target={85} />
                 </div>
                 <div className="w-full md:w-1/2 pl-4">
-                  <div className="mb-2">Consulted</div>
-                  <div className="bg-gray-800 w-full rounded-full h-3 mb-2">
-                    <div className="flex">
-                      <div className="bg-gradient-to-r from-[#D500EC] to-[#5710FD] h-3 rounded-full" style={{ width: '94%' }}></div>
-                      <div className="ml-2 mt-[-4px] text-sm">94%</div>
-                    </div>
-                  </div>
+                  <ProgressBar label="Consulted" target={94} />
                 </div>
               </div>
             </div>
 
             {/* Bottom Section */}
             <div className="mt-10 flex flex-col justify-center md:justify-start items-center md:items-start">
-              <div className=" text-3xl bg-gradient-to-r bg-clip-text  from-[#D500EC] to-[#5101F8] text-transparent ">◆ <span className='text-white text-lg'>Embrace Endless Growth</span></div>
-              <div className=" text-3xl  bg-gradient-to-r bg-clip-text  from-[#D500EC] to-[#5101F8] text-transparent">◆ <span className='text-white text-lg'>Pursue Greatness Relentlessly</span></div>
+              <div className="text-3xl bg-gradient-to-r bg-clip-text from-[#D500EC] to-[#5101F8] text-transparent">
+                ◆ <span className="text-white text-lg">Embrace Endless Growth</span>
+              </div>
+              <div className="text-3xl bg-gradient-to-r bg-clip-text from-[#D500EC] to-[#5101F8] text-transparent">
+                ◆ <span className="text-white text-lg">Pursue Greatness Relentlessly</span>
+              </div>
             </div>
           </div>
         </div>
@@ -98,4 +110,3 @@ const AboutMeSection = () => {
 };
 
 export default AboutMeSection;
-
