@@ -22,33 +22,34 @@
 }
 
 
-
-@keyframes slideInLeft {
-  from {
+/* Slide animations */
+@keyframes slide-in-left {
+  0% {
+    opacity: 0;
     transform: translateX(-100%);
-    opacity: 0;
   }
-  to {
-    transform: translateX(0);
+  100% {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
-@keyframes slideInRight {
-  from {
+@keyframes slide-in-right {
+  0% {
+    opacity: 0;
     transform: translateX(100%);
-    opacity: 0;
   }
-  to {
-    transform: translateX(0);
+  100% {
     opacity: 1;
+    transform: translateX(0);
   }
 }
 
-.animate-slideInLeft {
-  animation: slideInLeft 1s ease-out forwards;
+.animate-slide-in-left {
+  animation: slide-in-left 0.8s ease-out forwards;
 }
 
-.animate-slideInRight {
-  animation: slideInRight 1s ease-out forwards;
+.animate-slide-in-right {
+  animation: slide-in-right 0.8s ease-out forwards;
 }
+

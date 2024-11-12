@@ -8,6 +8,7 @@ import HeaderFooterSection from '../HeaderFooterSection'
 import CaseStudySection from '../CaseStudySection'
 import ScrollToTopAndNavBar from '../ScrollToTopAndNavBar'
 import AnimatedSection from '../AnimatedSection'
+import AutoSlidingGallery from '../AutoSlidingGallery'
 
 
 
@@ -36,6 +37,7 @@ const Home = () => {
       <HeaderFooterSection/>
       <ScrollToTopAndNavBar/>
       <AnimatedSection/>
+      <AutoSlidingGallery/>
       
       
       

@@ -39,19 +39,19 @@ function HeaderFooterSection() {
 
         {/* Social Media Icons */}
         <div className="flex space-x-6 gap-6 justify-center mb-4">
-          <a href="#" className="text-pink-500">
+          <a href="#" className="text-pink-500 animate-pulse">
             <FaInstagram size={28} md:size={32} />
           </a>
-          <a href="#" className="text-blue-400">
+          <a href="#" className="text-blue-400 animate-pulse">
             <FaTwitter size={28} md:size={32} />
           </a>
-          <a href="#" className="text-blue-700">
+          <a href="#" className="text-blue-700 animate-pulse">
             <FaLinkedin size={28} md:size={32} />
           </a>
-          <a href="#" className="text-blue-600">
+          <a href="#" className="text-blue-600 animate-pulse">
             <FaFacebook size={28} md:size={32} />
           </a>
-          <a href="#" className="text-red-600">
+          <a href="#" className="text-red-600 animate-pulse">
             <FaYoutube size={28} md:size={32} />
           </a>
         </div>
