@@ -7,8 +7,8 @@ const MobileCIB = () => {
     <div className='MobbileCIB pt-48 py-5'>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 px-[10%]">
 
-        {/* First Card */}
-        <div className="card bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-left">
+        {/* First Section - Slide from Left */}
+        <div className="bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-all duration-300 ease-out transform hover:scale-105 animate-slideInLeft">
           <div className='flex gap-10'>
             <div>
               <img src="https://i.postimg.cc/9XGyNfbN/Group-2.png" className='mt-2 mr-2 text-8xl' alt="" />
@@ -23,8 +23,8 @@ const MobileCIB = () => {
           </div>
         </div>
 
-        {/* Second Card */}
-        <div className="card bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-right">
+        {/* Second Section - Slide from Right */}
+        <div className="bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-all duration-300 ease-out transform hover:scale-105 animate-slideInRight">
           <div className='flex gap-10'>
             <div>
               <img src="https://i.postimg.cc/vBGxJr3q/Group-1935.png" className='mt-2 mr-2 text-8xl' alt="" />
@@ -39,8 +39,8 @@ const MobileCIB = () => {
           </div>
         </div>
 
-        {/* Third Card */}
-        <div className="card bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-left">
+        {/* Third Section - Slide from Left */}
+        <div className="bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-all duration-300 ease-out transform hover:scale-105 animate-slideInLeft">
           <div className='flex gap-10'>
             <div>
               <img src="https://i.postimg.cc/25GSBP7G/Group-1938.png" className='mt-2  mr-2 text-8xl' alt="" />
@@ -55,8 +55,8 @@ const MobileCIB = () => {
           </div>
         </div>
 
-        {/* Fourth Card */}
-        <div className="card bg-gradient-to-r from-[#130428] via-[#251043] via-[#38126D] via-[#261045] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-shadow duration-300 animate-slide-in-right">
+        {/* Fourth Section - Slide from Right */}
+        <div className="bg-gradient-to-r from-[#130428] via-[#251043] to-[#190634] border-t-4 border-t-[#693B93] p-6 rounded-lg flex flex-col text-white shadow-md hover:shadow-lg transition-all duration-300 ease-out transform hover:scale-105 animate-slideInRight">
           <div className='flex gap-10'>
             <div>
               <img src="https://i.postimg.cc/2jsLmNcL/Icons.png" className='mt-2 mr-2 text-8xl' alt="" />
