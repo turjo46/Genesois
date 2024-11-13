@@ -1,31 +1,44 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useState } from 'react';
+
+const images = [
+  'image1.jpg', // replace these with the actual paths to your images
+  'image2.jpg',
+  'image3.jpg',
+  'image4.jpg',
+  'image5.jpg',
+];
 
 const AutoSlidingGallery = () => {
-  const galleryRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Auto-slide effect
   useEffect(() => {
-    const scrollInterval = setInterval(() => {
-      if (galleryRef.current) {
-        galleryRef.current.scrollBy({ left: galleryRef.current.offsetWidth, behavior: "smooth" });
-      }
-    }, 2000); // Adjust the delay for the scrolling speed (in milliseconds)
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000); // Slide duration (3 seconds)
 
-    return () => clearInterval(scrollInterval);
+    return () => clearInterval(interval); // Cleanup on component unmount
   }, []);
 
   return (
-    <div className="overflow-hidden w-full">
-      <div
-        ref={galleryRef}
-        className="flex w-max space-x-4"
-        style={{ scrollBehavior: "smooth" }}
-      >
-        {/* Replace these images with your actual images */}
-        <div className="min-w-[300px] h-[200px] bg-cover bg-center" style={{ backgroundImage: "url('https://via.placeholder.com/300')" }}></div>
-        <div className="min-w-[300px] h-[200px] bg-cover bg-center" style={{ backgroundImage: "url('https://via.placeholder.com/300')" }}></div>
-        <div className="min-w-[300px] h-[200px] bg-cover bg-center" style={{ backgroundImage: "url('https://via.placeholder.com/300')" }}></div>
-        <div className="min-w-[300px] h-[200px] bg-cover bg-center" style={{ backgroundImage: "url('https://via.placeholder.com/300')" }}></div>
-        <div className="min-w-[300px] h-[200px] bg-cover bg-center" style={{ backgroundImage: "url('https://via.placeholder.com/300')" }}></div>
+    <div className="relative w-full overflow-hidden">
+      <div className="flex transition-transform duration-1000 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+        {images.map((src, index) => (
+          <div key={index} className="w-full flex-shrink-0">
+            <img src={src} alt={`Slide ${index}`} className="w-full object-cover" />
+          </div>
+        ))}
+      </div>
+
+      {/* Optional: Dots indicator */}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            className={`w-3 h-3 rounded-full ${index === currentIndex ? 'bg-yellow-500' : 'bg-gray-300'}`}
+            onClick={() => setCurrentIndex(index)}
+          ></button>
+        ))}
       </div>
     </div>
   );
